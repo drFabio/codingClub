@@ -1,3 +1,13 @@
 ul li {
   display: inline-block;
 }
+header {
+  /*   Cor do fundo do elemento  */
+  background-color: rgb(24, 113, 87);
+  /*    Cor do texto do elemento */
+  color: #fff;
+  padding: 10px;
+}
+body {
+  margin: 0;
+}
