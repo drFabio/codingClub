@@ -5,76 +5,66 @@
   <meta charset="UTF-8">
   <title>CodePen - CodingClub</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./home.css">
 
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
-  <!--header significa um cabeçalho-->
-  <header>
-    <!--h1 é o título mais importante-->
-    <h1><s>Munich</s> Coding Club!</h1>
-    <!--navegação-->
-    <nav>
-      <!-- lista não ordenada      -->
-      <ul>
-        <!-- item de lista        -->
-        <li>
-          <!-- Ancoras, levam para outros lugares-->
-          <a href="#objectives">
-            Objetivos
-          </a>
-        </li>
-        <li>
-          <a href="#nextObjectives">Próximos objetivos</a>
-        </li>
+  <div class="wrapper">
+    <!--header significa um cabeçalho-->
+    <header>
+      <!--h1 é o título mais importante-->
+      <h1>Coding Club!</h1>
+      <!--navegação-->
+      <nav>
         <ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Sessão 3, introdução à HTML e CSS</h2>
+          <li>
+            <a href="./index.html" class="current">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="./calendar.html">
+              Agenda
+            </a>
+          </li>
+          <li>
+            <a href="./classes.html">
+              Aulas
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <article>
+            <h2>Aula atual </h2>
+            <img src="./assets/exploring.svg" alt="tech image" height="100rem">
+            <p>HTML/CSS E layouts</p>
+            <p>Uma visão dos principais tipos de layout modernos: grid, flex</p>
+            <p>Apresentação de css vars, float e pseudoelemtnos.</p>
 
-    <h3 id="objectives">Objetivos</h3>
+          </article>
+        </section>
+        <section>
+          <h2>Objetivo</h2>
+          <img src="./assets/firmware.svg" alt="tech image" height="100rem">
+          <p>O curso seguirá uma abordagem pragmática, acessível e empoderadora.</p>
+          <p>Com feedbacks constantes e utilizando-se de ferramentas existentes.</p>
+          <p>O objetivo primário é ajudar alunos a terem as habilidades necessárias para se tornar desenvolvedores
+            front-end. Eventualmente queremos dar as habilidades necessárias para se tornarem desenvolvedores fullstack.
+          </p>
+          <p>O ensino tentará ser prático e focado em portfólio e aprendizado avançado com o intuíto de dar ao aluno a
+            segurança necessária para conseguir um emprego desejado o mais cedo possível.</p>
+        </section>
+      </div>
 
-    <ol>
-      <li>Introduzir uma nova plataforma (O codepen)</li>
-      <li>Apresentar HTML</li>
-      <li>Apresentar o CSS</li>
-      <li>Introdução às devtools</li>
+    </main>
+    <footer>From Brazil to Germany, to Canada, to the world</footer>
+  </div>
 
-      <li>Iniciar o projeto de sua página pessoal</li>
-    </ol>
-    <h3 id="nextObjectives">Próximos objetivos</h3>
-    <ul>
-      <li>Introdução ao editor VS Code</li>
-      <li>Introdução à git com o objetivo de github pages</li>
-    </ul>
-    <hr />
-    <article>
-      <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered"
-        title="HTML5 Powered">
-      <h3>Uma introdução</h3>
-      <img src="" <p>Nessa sessão nós vamos iniciar nosso desenvolvimento de html, uma das based das tecnologias Web e o
-      início das habilidades empregáveis para uma carreira fullstack</p>
-      <p>O <abbr title="Hyper text markup language">HTML</abbr> foi inventado para marcar HyperTexto, um texto com mais
-        capacidades . Principalmente a capacidade de referenciar outros textos. Ele foi inventado por <a
-          href="https://en.wikipedia.org/wiki/HTML">Tim Bernes Lee</a> em <time datetime="1993-06-01">junho de
-          1993</time></p>
-      <p>Hoje em dia HTML é um termo um pouco mais amplo que a linguagem em si, na forma do <a
-          href="https://html.spec.whatwg.org/">HTML5</a> . Um "living standard" que é capitaneada pela <a
-          href="https://whatwg.org/">WHATWG</a> e auxiliado pela <a href="https://www.w3.org/">W3C</a></p>
-
-      <h4>OK! e na prática?</h5>
-        <p>Na prática o HTML é a base da web, todos os sites que vocês interagem atualmente são consumidos com um
-          documento HTML sendo servido.</p>
-        <p>Entender HTML nos ajudará também a entender linguagens <em>declarativas</em></p>
-        <p>O html como linguagem, é definito por <em>tags</em> e <em>atributos</em></p>
-        <code>
-        &lt;p name="introduction"&gt;Hello world&lt;/p&gt;
-      </code>
-    </article>
-  </main>
-  <!-- partial -->
 
 </body>
 

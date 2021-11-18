@@ -1,13 +1,86 @@
-ul li {
+:root {
+  --medium-spring-green: rgba(113, 247, 159, 1);
+  --medium-turquoise: rgba(61, 214, 208, 1);
+  --keppel: rgba(21, 176, 151, 1);
+  --orange-yellow: rgba(243, 182, 31, 1);
+  --dark-lava: rgba(73, 57, 44, 1);
+  
+  --primary: var(--medium-spring-green);
+  --secondary: var(--medium-turquoise);
+  --tertiary: var(--keppel);
+  --quaternary: var(--orange-yellow);
+  --quinary: var(--dark-lava);
+}
+
+
+nav ul li {
   display: inline-block;
 }
 header {
   /*   Cor do fundo do elemento  */
-  background-color: rgb(24, 113, 87);
+  background-color: var(--primary);
   /*    Cor do texto do elemento */
-  color: #fff;
+  color: var(--quinary);
   padding: 10px;
+}
+a, a:visited {
+  color: var(--quinary);
+  text-decoration: none;
+
+}
+a:hover  {
+  cursor:  pointer;
+  text-decoration: underline;
+}
+main a,main a:visited {
+  color: var(--primary);
 }
 body {
   margin: 0;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+a.current {
+  font-weight: bold;
+  color: var(--quaternary);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  /* Just for parent demo size */
+  height: 100vh;
+}
+footer {
+  background-color: var(--quinary);
+  color: var(--quaternary);
+  padding: 0.5rem;
+}
+main {
+  background-color: var(--tertiary);
+  color: var(--quinary);
+  display: flex;
+  justify-content: center;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+main section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main > .container {
+  max-width: 700px;
+  background-color: inherit;
+}
+.title {
+  font-size: 3rem;
+}
+dt{
+  font-weight: bold;
+  margin-top:1rem;
+}
+dd {
+  margin-left: 0;
 }

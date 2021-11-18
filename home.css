@@ -1,0 +1,10 @@
+.container section:nth-child(odd) img{
+    float:left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.container section:nth-child(even) img{
+    float:right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}

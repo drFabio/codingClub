@@ -1,0 +1,9 @@
+/* Regras de css que só se aplicarão para o calendário
+ */
+.calendar {
+    background-color: lawngreen;
+    display: inline-block;
+    padding: 1rem;
+}
+
+
